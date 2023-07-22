@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" async defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div>
+        <button class="rock" onclick="roundPlay(0)"><img src="rock.jpg"></button>
+        <button class="paper" onclick="roundPlay(1)"><img src="paper.png"></button>
+        <button class="scissors" onclick="roundPlay(2)"><img src="scissors.png"></button>
+    </div>
+    <div class="display">
+        <div class="moves">
+            <div id="computer"></div>
+            <div id="player"></div>
+            <div id="scorecard"></div>
+        </div>    
+        <table id="history">
+            <tr>
+                <td> Round Number </td> <td> Player Score </td> <td> Computer Score</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
