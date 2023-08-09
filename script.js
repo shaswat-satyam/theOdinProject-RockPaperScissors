@@ -6,6 +6,9 @@ const computer = document.getElementById("computer");
 const player = document.getElementById("player");
 const history = document.getElementById("history");
 const body = document.body;
+const playerScoreDisplay = document.getElementById("playerScore");
+const computerScoreDisplay = document.getElementById('computerScore')
+
 
 var i = 0;
 
@@ -44,8 +47,11 @@ function roundPlay(choice){
     var cell3 = row.insertCell(2);
 
     cell1.textContent = i;
-    cell2.textContent = playerScore;
-    cell3.textContent = computerScore;
+    cell2.textContent = elements[choice];
+    cell3.textContent = elements[computerChoice];
+
+    playerScoreDisplay.textContent = playerScore;
+    computerScoreDisplay.textContent = computerScore;
 
     winnerCheck();
 

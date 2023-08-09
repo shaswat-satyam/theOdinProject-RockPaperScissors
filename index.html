@@ -8,10 +8,21 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <h1>Rock Paper Scissors</h1></div>
+    <h4>First to score 5 points wins the game</h4>
+
+        <div class="score">
+            <h1>User:</h1> <h1 id="playerScore">0</h1>
+            <h1>Computer:</h1><h1 id="computerScore">0</h1>
+        </div>
+        <div class="weapons">
+            <button class="rock" onclick="roundPlay(0)"><img src="rock.png"></button>
+            <button class="paper" onclick="roundPlay(1)"><img src="paper.png"></button>
+            <button class="scissors" onclick="roundPlay(2)"><img src="scissors.svg"></button>
+        </div>
+        
     <div>
-        <button class="rock" onclick="roundPlay(0)"><img src="rock.jpg"></button>
-        <button class="paper" onclick="roundPlay(1)"><img src="paper.png"></button>
-        <button class="scissors" onclick="roundPlay(2)"><img src="scissors.png"></button>
+        
     </div>
     <div class="display">
         <div class="moves">
@@ -19,10 +30,13 @@
             <div id="player"></div>
             <div id="scorecard"></div>
         </div>    
+    </div>
+    <div class="moves">
+        <h2>History</h2>
         <table id="history">
-            <tr>
+            <thead>
                 <td> Round Number </td> <td> Player Score </td> <td> Computer Score</td>
-            </tr>
+            </thead>
         </table>
     </div>
 </body>
